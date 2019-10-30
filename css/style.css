@@ -1,0 +1,327 @@
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('../fonts/century_gothic.ttf') format('truetype');
+}
+body {
+  font-family: 'Century Gothic';
+}
+.menu {
+  overflow: hidden;
+  box-shadow: 0px 5px 5px #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: right;
+  z-index: 1;
+}
+.menu a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+}
+.menu .menuItem {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.menu a:hover {
+  color: #a9a9a9;
+}
+.menu .dropdown {
+  display: none;
+}
+.logo {
+  float: none;
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  padding: 10px 0px !important;
+}
+.logo img{
+  width: 50px;
+}
+.container {
+  margin: 200px;
+  margin-top: -50px;
+  margin-bottom: 100px;
+  display: flex;
+  font-size: 20px;
+}
+.imagespace {
+  margin-right: 250px;
+  text-align: center;
+}
+.contactinput {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: 'Century Gothic';
+}
+.imagespacecontact {
+  margin-right: 150px;
+  margin-left: 250px;
+  margin-top: 20px;
+  text-align: center;
+}
+.imagespacecontact img {
+  margin-top: 40px;
+}
+#feedback {
+  display: none;
+}
+.contacts {
+  text-align: left;
+  margin-left: 50px;
+}
+.cont {
+  font-weight: 800;
+}
+.contactform {
+  padding-top: 25px;
+}
+.article {
+  text-align: justify;
+  font-size: 23px;
+  margin: 50px 10px;
+  margin-right: 0;
+}
+.team {
+  margin-left: 250px;
+  margin-right: 200px;
+  text-align: center;
+  display: flex;
+}
+a.button {
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: #769C40;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+a.button:hover {
+  color: #769C40;
+  background: #fff;
+}
+.teamItem {
+  margin: auto;
+  text-align: center;
+}
+.teamHeading {
+  margin-left: 250px;
+  margin-top: -100px;
+}
+#answer {
+  display: none;
+}
+.teamItem .forimage {
+  width: 150px;
+  border-radius: 50%;
+  height: 150px;
+}
+.mainHeading {
+  margin-right: 200px;
+  margin-top: 250px;
+  text-align: right;
+}
+.contactHeading {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 30px;
+}
+.descItem {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 300px;
+}
+.adv {
+  display: block;
+}
+.first {
+  background-image: url(../images/advantages/1.png);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+}
+.second {
+  background-image: url(../images/advantages/2.png);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+}
+.third {
+  background-image: url(../images/advantages/3.png);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+}
+.footer {
+  height: 200px;
+  width: 100%;
+  margin-top: 50px;
+  padding: 0;
+  left: 0;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px -5px 5px #ccc;
+  text-align: center;
+}
+.company-name {
+  margin: 0;
+  font-size: 15px;
+}
+.footer-links {
+  list-style: none;
+  padding: 35px 0 23px;
+  font-size: 25px;
+  color: #fff;
+}
+.footer-links a {
+  text-decoration: none;
+}
+@media screen and (max-width: 1700px) {
+  .imagespace {
+    margin-right: 50px;
+  }
+  .imagespace img {
+    width: 450px;
+  }
+  .mainHeading {
+    font-size: 15px;
+    margin-left: 700px;
+  }
+  .imagespacecontact {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 1500px) and (min-width: 1300px){
+  .descItem {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .mainHeading {
+    margin-left: 500px;
+    margin-right: 10px;
+  }
+  .teamHeading {
+    margin-left: 10px;
+  }
+  .teamItem {
+    width: 200px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+  .forImage {
+    float: left;
+  }
+  .team {
+    display: block;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+  .adv {
+    display: flex;
+  }
+  .descItem {
+    margin-bottom: 170px;
+    width: 700px;
+    text-align: left;
+  }
+  .imagespacecontact {
+    margin-right: 50px;
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .menu a:not(:first-child) {
+    display: none;
+  }
+  .menu a.dropdown {
+    float: right;
+    display: block;
+  }
+  .container {
+    display: block;
+    margin-top: 200px;
+  }
+  .menu.responsive {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .mainHeading {
+    position: absolute;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 350px;
+    text-align: right;
+  }
+  .menu.responsive a.dropdown {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .descItem {
+    width: 700px;
+  }
+  .logo {
+    left: 40%;
+  }
+  .imagespace{
+    margin-bottom: 70px;
+  }
+  .imagespacecontact {
+    text-align: left;
+    margin-top: -100px;
+  }
+  .contactform {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .descItem {
+    width: 300px;
+    margin-bottom: 140px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .descItem {
+    width: 400px;
+    font-size: 10px;
+    margin-bottom: 135px;
+  }
+  .teamItem .forimage {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+  }
+  .teamItem {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .descItem {
+    width: 200px;
+    margin-bottom: 110px;
+  }
+}

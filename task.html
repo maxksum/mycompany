@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/app.js"></script>
+  <meta charset="utf-8"/>
+  <title>Название страницы</title>
+</head>
+<body>
+  <header>
+    <nav class="menu" id="navbar">
+      <a href="index.html" class="logo"><img src="images/logo.png"></a>
+      <a href="#news" class="menuItem">Task</a>
+
+      <a href="contact.html" class="menuItem">Contact</a>
+      <a href="javascript:void(0);" class="dropdown menuItem" onclick="fixFunction()">&#9776;</a>
+    </nav>
+  </header>
+  <div class="contactHeading">
+    <h1>Task</h1>
+  </div>
+  <div class="container">
+    <div class="imagespacecontact">
+      <img src="images/task.jpg">
+    </div>
+    <form class="contactform">
+      <label for="name">First number</label><br>
+      <input type="text" class="contactinput" id="firstnumber"><br>
+      <label for="mail">Second number</label><br>
+      <input type="text" class="contactinput" id="secondnumber"><br>
+      <a class="button" href="javascript:void(0);" id="getnumber" onclick="getRandom()">Get Random</a>
+      <div id="answer">
+        <h1>Your random number is <span id="randomnumber">0</span></h1>
+      </div>
+    </form>
+  </div>
+  <div class="footer">
+    <p class="footer-links">
+				<a href="index.html">Home</a>
+				·
+				<a href="task.html">Task</a>
+				·
+				<a href="contact.html">Contact</a>
+			</p>
+      <p class="company-name">My Company © 2019</p>
+  </div>
+  <script src="js/footer.js"></script>
+</body>
+</html>
